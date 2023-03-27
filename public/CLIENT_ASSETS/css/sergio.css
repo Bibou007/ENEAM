@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+
+.content_box_formation {
+    /* background-color: #fff22f; */
+    /* background-color: rgb(43, 183, 226); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    height: 100vh; 
+    margin-bottom: 2rem;
+  
+
+}
+
+.formations {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ss_content {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-left: solid rgb(140, 138, 138);
+}
+
+.formations .box {
+    background-color: #006766;
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-around;
+    height:auto;
+    transition: 0.7s;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    background: none;
+    font-size: 2rem;
+
+}
+.formations .box h3 {
+
+    font-size: 1.5rem;
+    color: #444;
+    padding: 1rem;
+}
+@media screen and (max-width: 1000px) {
+    .content_box_formation{
+      width: 100%;
+    }
+}
+@media screen and (max-width: 680px) {
+    .content_box_formation{
+        margin-top: 50px;
+      width: 100%;
+      margin-bottom: 2rem;
+
+
+    }
+}
+    @media screen and (max-width: 680px) {
+
+   .box {
+    display: block;
+     
+    }
+
+.formations {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.formations .box {
+    background-color: #006766;
+    display: block;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-around;
+    height:auto;
+    transition: 0.7s;
+    cursor: pointer;
+    margin-bottom: .5rem;
+    background: none;
+    font-size: 2rem;
+
+}
+.formations .box h3 {
+
+    font-size: 1.3rem;
+    color: #444;
+    padding: .5rem;
+}
+
+
+}
+
+.formations .box:hover .icon {
+    margin-top: -1rem;
+}
+
+.formations .box:active .container_box {
+    /* background-color: rgb(165, 181, 194); */
+    border-left: solid .2rem;
+}
+
+.formations .box .icon {
+    margin-top: 0.5rem;
+    transition: 0.7s;
+    height: 40px;
+    width: 40px;
+}
+
+
+.container_box {
+    /* background-color: aquamarine; */
+    margin: 2rem 2rem 2rem 2rem;
+    padding-left: 3rem;
+    display: none;
+    animation: animation 0.5s ease-out;
+
+}
+
+.container_box h3 {
+    font-size: 2rem;
+    background-color: #fff;
+    color: #444;
+    padding: 1rem 1.5rem;
+
+}
+
+.container_box h4 {
+    display: flex;
+    margin-top: 1rem;
+    background-color: rgb(230, 243, 255);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: 2rem;
+    width: 100%;
+    border-bottom: solid rgb(140, 138, 138) 1px;
+    font-size: 1.5rem;
+}
+
+.container_box ul {
+    font-size: 13px;
+    color: rgb(21, 20, 20);
+    padding-left: 5rem;
+    margin-top: .5rem;
+
+}
+
+/*animation*/
+@keyframes animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.container_box h4 {
+    padding-left: 3rem;
+}
+
+.titre_section {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #444;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    color: #444;
+
+}
+
+.scroll_container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 500px;
+    /* overflow-y: scroll; */
+    /* scroll-behavior: smooth; */
+
+    /* overflow-y: visible; */
+    overflow-y: hidden;
+    overflow-y: scroll;
+    /* overflow-y: auto; */
+    scrollbar-width: none;
+   
+}
+.scroll_container::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll_page {
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.a {
+    color: none;
+}
+
+.scroll_container h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+
+}
+
+p {
+    font-size: 13px;
+
+}
+
+.scroll_container h4 {
+    margin-top: 20px;
+    margin-bottom: 1rem;
+}
+
+.tableau1 {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+tr,
+td {
+    font-size: 13px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+
+
+.home-courses .slide:hover .content {
+    bottom: 0;
+}
